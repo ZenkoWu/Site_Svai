@@ -1,7 +1,11 @@
 import React from 'react'
+import Breadcrumbs from './Breadcrumbs';
 
 export default function Articles() {
   return (
-    <div>Articles</div>
+    <div>
+      <Breadcrumbs currentPage = 'Статьи'/>
+      Articles
+    </div>
   )
 }

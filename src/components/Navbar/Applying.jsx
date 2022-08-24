@@ -1,7 +1,10 @@
 import React from 'react'
+import Breadcrumbs from './Breadcrumbs';
 
 export default function Applying() {
   return (
-    <div>Applying</div>
+    <div>
+      <Breadcrumbs currentPage = 'Применение'/>
+      Applying</div>
   )
 }

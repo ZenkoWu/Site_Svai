@@ -1,7 +1,11 @@
 import React from 'react'
+import Breadcrumbs from './Breadcrumbs';
 
 export default function PerformanceType() {
   return (
-    <div>PerformanceType</div>
+    <div>
+      <Breadcrumbs currentPage = 'Виды исполнения'/>
+      PerformanceType
+    </div>
   )
 }
