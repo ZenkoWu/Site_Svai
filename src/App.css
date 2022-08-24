@@ -5,5 +5,10 @@
   /* border: 1px solid rgb(22, 121, 66); */
 }
  
+.activated:hover {
+  background-color: rgb(234, 234, 243);
+}
 
-
+.colorBlue {
+  color: #1f2a80;
+}
