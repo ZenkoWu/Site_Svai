@@ -3,8 +3,6 @@ import Navbar from './../Navbar/Navbar';
 
 export default function Header() {
 const BLUE = '#1f2a80'
-const GRAY = '#373737'
-
   return (
     <div class="container">
       <div class="row">
@@ -14,7 +12,7 @@ const GRAY = '#373737'
                   <div className='row'>
                     <div className='col-sm-3 p-0'  style={{ width:'115px'}}>
                       <a href='/'>
-                        <img 
+                        <img alt='/'
                         src='https://thumb.tildacdn.com/tild6638-3066-4333-a637-663961376662/-/resize/140x/-/format/webp/__.png'
                         className='w-100'
                         />
@@ -45,7 +43,7 @@ const GRAY = '#373737'
               </div>
           </div>
           <div className='row'>
-            <Navbar/>
+            <Navbar/>  
           </div>
         </div>
         <div class="col-sm pt-1 " style={{paddingLeft:'25px'}}>
