@@ -1,8 +1,15 @@
+@font-face {
+  font-family: 'Gilroy Regular';
+  src: url('./fonts/Gilroy-Regular.woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
 .App {
   font-size: 14px;
-  font-family: 'Times New Roman', Times, serif;
-  padding: 5px 55px;
-  /* border: 1px solid rgb(22, 121, 66); */
+  font-family: 'Gilroy Regular', Arial, sans-serif;
+  padding: 5px 70px;
+  color: #373737;
 }
  
 .activated:hover {
@@ -11,4 +18,8 @@
 
 .colorBlue {
   color: #1f2a80;
+}
+
+.colorGrey {
+  color: #373737;
 }

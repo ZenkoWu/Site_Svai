@@ -17,7 +17,7 @@ export default function Header() {
                         />
                       </a>
                     </div>
-                    <div className='col-sm-5 pt-1'>
+                    <div className='col-sm-6 pt-1' >
                       Фундамент вашего дома на забивных Ж/Б сваях «под ключ» в СПб и ЛО
                     </div> 
                   </div> 
@@ -27,7 +27,7 @@ export default function Header() {
                     <div class="col-sm-1 pt-1 fs-7">
                       <i class="fa-solid fa-location-dot fa-2x colorBlue"></i>
                     </div>
-                    <div class="col-sm px-3">
+                    <div class="col-sm px-3 lh-sm">
                       г. Санкт-Петербург, Южное шоссе, дом 37, корпус 4
                     </div>
                     </div>
@@ -45,26 +45,27 @@ export default function Header() {
             <Navbar/>  
           </div>
         </div>
-        <div class="col-sm pt-1 ps-4">
-          <div className='row text-end '>
-            <div class="col-sm-1 pt-1">
+        <div class="col-sm pt-1 ps-4 text-end">
+          <div className='row'>
+          <div class="col-sm-1"></div>
+            <div class="col-sm-2 pt-1 p-1">
               <a href='/'><i class="fa-brands fa-viber fs-3 colorBlue"></i></a>
             </div>
-            <div class="col-sm-1 pt-1">
+            <div class="col-sm-1 pt-1 p-1">
               <a href='/'><i class="fa-solid fa-paper-plane fs-4 colorBlue"></i></a>
             </div>
-            <div class="col-sm-1 pt-1">
+            <div class="col-sm-1 pt-1 p-1">
               <a href='/'> <i class="fa-solid fa-phone fs-4 colorBlue" ></i></a>
             </div>
-            <div class="col-sm-9 fs-4 fw-bold p-0">
-                <span>8 (812) 500-05-54</span>
+            <div class="col-sm-7 fw-bold p-0">
+                <span style={{fontSize:'24px'}}>8 (812) 500-05-54</span>
             </div>
           </div>
-          <div className='row pt-3 text-end ps-5'>
-            <a href='/'style={{ width: '280px'}} className=' text-decoration-none'>
-              <div className='text-white text-center fs-6'
-              style={{ width: '100%', height: '40px', backgroundColor: '#1f2a80', 
-              paddingTop: '7px',  fontFamily: "'Gilroy',Arial,sans-serif"}}>
+          <div className='row pt-3 d-flex justify-content-end'>
+            <a href='/'style={{ width: '300px'}} className=' text-decoration-none'>
+              <div className='text-white text-center fs-6 fw-bolder ms-3'
+              style={{ width: '100%', height: '45px', backgroundColor: '#1f2a80', 
+              paddingTop: '9px', }}>
                 Получить консультацию
               </div>
             </a>
