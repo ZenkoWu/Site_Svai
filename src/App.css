@@ -8,7 +8,6 @@
 .App {
   font-size: 14px;
   font-family: 'Gilroy Regular', Arial, sans-serif;
-  padding: 5px 70px;
   color: #373737;
 }
  
@@ -22,4 +21,18 @@
 
 .colorGrey {
   color: #373737;
+}
+
+.borderBlue {
+  border: 3px solid #1f2a80;
+  border-radius: 10px;
+}
+
+.blueLine {
+  border-bottom: 3px solid #1f2a80;
+  margin: auto;
+}
+
+.bg-blue {
+  background-color: #1f2a80;
 }

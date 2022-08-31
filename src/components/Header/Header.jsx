@@ -3,7 +3,7 @@ import Navbar from './../Navbar/Navbar';
 
 export default function Header() {
   return (
-    <div class="container">
+    <div class="container App">
       <div class="row">
         <div class="col-sm-8">
           <div className='row'>
@@ -62,13 +62,10 @@ export default function Header() {
             </div>
           </div>
           <div className='row pt-3 d-flex justify-content-end'>
-            <a href='/'style={{ width: '300px'}} className=' text-decoration-none'>
-              <div className='text-white text-center fs-6 fw-bolder ms-3'
-              style={{ width: '100%', height: '45px', backgroundColor: '#1f2a80', 
-              paddingTop: '9px', }}>
-                Получить консультацию
-              </div>
-            </a>
+            <button className='text-white fs-6 fw-bolder w-75'
+              style={{ height: '45px', backgroundColor: '#1f2a80', border:'none' }}>
+              Получить консультацию
+            </button>
           </div>
         </div>
       </div>
