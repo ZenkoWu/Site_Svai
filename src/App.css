@@ -36,3 +36,7 @@
 .bg-blue {
   background-color: #1f2a80;
 }
+
+.openDescription:hover{
+  cursor: pointer;
+}
