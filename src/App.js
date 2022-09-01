@@ -11,7 +11,7 @@ import Contacts from './components/Navbar/Contacts';
 import ApplyTypeComponent from './components/Navbar/Applying/ApplyTypeComponent';
 import NotFounded from './components/NotFounded';
 
-function App() {
+function App(props) {
   return ( 
     <>
         <Header/>
@@ -21,8 +21,9 @@ function App() {
           <Route path = 'products' element={<Products/>}/>
           <Route path = 'performanceType' element={<PerformanceType/>}/>
           <Route path = 'applying' element={<Applying/>}>
-            <Route path ='' element={<AllApplication/>}/>
-            <Route path =':applyType' element={<ApplyTypeComponent/>}/>
+            <Route path ='' element={<AllApplication applicationTypes = {props.state.applicationTypes}/>}/>
+            <Route path =':applyType' 
+            element={<ApplyTypeComponent applicationTypes ={props.state.applicationTypes}/>}/>
           </Route>
           <Route path = 'objects' element={<Objects/>}/>
           <Route path = 'articles' element={<Articles/>}/>
