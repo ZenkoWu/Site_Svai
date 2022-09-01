@@ -47,17 +47,17 @@ export default function Header() {
         </div>
         <div class="col-sm pt-1 ps-4 text-end">
           <div className='row'>
-          <div class="col-sm-1"></div>
-            <div class="col-sm-2 pt-1 p-1">
+          <div class="col-lg-1"></div>
+            <div class="col-lg-2 col-sm-4 pt-1 p-1">
               <a href='/'><i class="fa-brands fa-viber fs-3 colorBlue"></i></a>
             </div>
-            <div class="col-sm-1 pt-1 p-1">
+            <div class="col-lg-1 col-sm-4 pt-1 p-1">
               <a href='/'><i class="fa-solid fa-paper-plane fs-4 colorBlue"></i></a>
             </div>
-            <div class="col-sm-1 pt-1 p-1">
+            <div class="col-lg-1 col-sm-4 pt-1 p-1">
               <a href='/'> <i class="fa-solid fa-phone fs-4 colorBlue" ></i></a>
             </div>
-            <div class="col-sm-7 fw-bold p-0">
+            <div class="col-lg-7 fw-bold p-0">
                 <span style={{fontSize:'24px'}}>8 (812) 500-05-54</span>
             </div>
           </div>

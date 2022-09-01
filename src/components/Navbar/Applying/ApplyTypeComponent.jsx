@@ -19,11 +19,6 @@ let params = useParams()
   let applyingType = applicationTypes.reduce((total, elem) => 
     (elem.applyType === params.applyType ? elem : total), null) 
 
-  
-  
-  // let descriptionType = moreDescription.reduce((total, elem) => (elem.applyType == params.applyType ? 
-  //   elem :total)) 
-  
    if(!applyingType) {
     return <Navigate to ='/applying'/>
    }

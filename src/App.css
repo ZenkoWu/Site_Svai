@@ -40,3 +40,10 @@
 .openDescription:hover{
   cursor: pointer;
 }
+
+.bonusStyle {
+  background-color: rgb(231 232 239);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #747577;
+  font-size: 12px;
+}
