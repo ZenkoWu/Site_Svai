@@ -32,7 +32,7 @@ export default function Applying(props) {
       title:'Для строительства крыльца или террасы',
     },
     {id: 5,
-    to:'for-building-a-arbor', 
+    to:'for-building-an-arbor', 
       src:'https://thumb.tildacdn.com/tild3632-6232-4263-b237-643037383538/-/cover/360x300/center/center/-/format/webp/besedka.jpg',
       title:'Для строительства беседки',
     },
