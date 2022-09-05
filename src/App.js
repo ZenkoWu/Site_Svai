@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
-import Products from './components/Navbar/Products';
+import Products from './components/Navbar/Products/Products';
 import Main from './components/Main/Main';
-import ExecutionTypes from './components/Navbar/ExecutionTypes/ExecutionTypes';
+import ExecutionTypes, { AllExecution } from './components/Navbar/ExecutionTypes/ExecutionTypes';
 import Applying, { AllApplication } from './components/Navbar/Applying/Applying';
 import Objects from './components/Navbar/Objects';
 import Articles from './components/Navbar/Articles';
@@ -11,6 +11,7 @@ import Contacts from './components/Navbar/Contacts';
 import ApplyTypeComponent from './components/Navbar/Applying/ApplyTypeComponent';
 import NotFoundedPage from './components/NotFoundedPage/NotFoundedPage';
 import Footer from './components/Footer/Footer';
+
 
 function App(props) {
   return ( 
@@ -21,7 +22,7 @@ function App(props) {
           <Route path = '/' element={<Main/>}/>
           <Route path = 'products' element={<Products/>}/>
           <Route path = 'executionTypes' element={<ExecutionTypes/>}>
-  
+            <Route path='' element={<AllExecution/>}/>
           </Route>
           <Route path = 'applying' element={<Applying/>}>
             <Route path ='' element={<AllApplication applicationTypes = {props.state.applicationTypes}/>}/>

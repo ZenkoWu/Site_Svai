@@ -28,6 +28,9 @@
   border-radius: 10px;
 }
 
+.borderBlue2 {
+  border: 2px solid #1f2a80;
+}
 .blueLine {
   border-bottom: 3px solid #1f2a80;
   margin: auto;
@@ -37,6 +40,9 @@
   background-color: #1f2a80;
 }
 
+.bgGrey {
+  background-color: #f2f2f2;
+}
 .openDescription:hover{
   cursor: pointer;
 }
@@ -46,4 +52,12 @@
   border-radius: 10px;
   box-shadow: 5px 5px 10px #747577;
   font-size: 12px;
+}
+
+
+.greenButton {
+  background-color: #13ce66;
+  border-radius: 20px;
+  border: none;
+  color: white;
 }
