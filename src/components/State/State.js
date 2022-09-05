@@ -1,7 +1,7 @@
 let state = {
       applicationTypes: [
         {id: 1,
-         applyType: 'for-building-a-datcha',
+         type: 'for-building-a-datcha',
          imgSrc:{
           small:'https://thumb.tildacdn.com/tild3634-3965-4337-b562-303138666631/-/cover/360x300/center/center/-/format/webp/house.jpg',
           large:'https://thumb.tildacdn.com/tild3266-6535-4733-b534-646636386135/-/resize/560x/-/format/webp/house.jpg'
@@ -31,7 +31,7 @@ let state = {
         },
         
         {id: 2,
-         applyType: 'for-building-a-bath',
+          type: 'for-building-a-bath',
          imgSrc:{
           small:'https://thumb.tildacdn.com/tild6535-3261-4333-a361-343466613666/-/cover/360x300/center/center/-/format/webp/banya.jpg', 
           large:'https://thumb.tildacdn.com/tild3964-3535-4164-b938-323435636436/-/resize/560x/-/format/webp/banya.jpg'
@@ -58,7 +58,7 @@ let state = {
         },
     
         {id: 3,
-         applyType: 'for-building-a-fence',
+         type: 'for-building-a-fence',
          imgSrc:{
           small:'https://thumb.tildacdn.com/tild6462-6436-4333-a532-303466653531/-/cover/360x300/center/center/-/format/webp/zabor.jpg', 
           large:'https://thumb.tildacdn.com/tild6438-3963-4931-b234-336139336633/-/resize/560x/-/format/webp/zabor.jpg'
@@ -103,7 +103,7 @@ let state = {
         },
     
         {id: 4,
-         applyType: 'for-building-a-porch-and-terrace',
+         type: 'for-building-a-porch-and-terrace',
          imgSrc:{
           small:'https://thumb.tildacdn.com/tild6661-3636-4838-b737-363064303437/-/cover/360x300/center/center/-/format/webp/terace.jpg',
           large:'https://thumb.tildacdn.com/tild3166-3063-4061-b264-313732353963/-/resize/560x/-/format/webp/terace.jpg'
@@ -141,7 +141,7 @@ let state = {
         },
     
         {id: 5,
-         applyType: 'for-building-an-arbor',
+         type: 'for-building-an-arbor',
          imgSrc:{
           small:'https://thumb.tildacdn.com/tild3632-6232-4263-b237-643037383538/-/cover/360x300/center/center/-/format/webp/besedka.jpg',
           large:'https://thumb.tildacdn.com/tild3162-6263-4134-a239-626233623138/-/resize/560x/-/format/webp/besedka.jpg'
@@ -177,7 +177,7 @@ let state = {
         },
     
         {id: 6,
-         applyType: 'for-building-a-pier-and-jetty',
+         type: 'for-building-a-pier-and-jetty',
          imgSrc:{
           small:'https://thumb.tildacdn.com/tild3465-3465-4836-b362-636563663931/-/cover/360x300/center/center/-/format/webp/pirs.jpg',
           large:'https://thumb.tildacdn.com/tild3061-6330-4732-b064-356363333333/-/resize/560x/-/format/webp/pirs.jpg'
@@ -219,7 +219,7 @@ let state = {
 
       executionTypes: [
       {id: 1,
-        executionType: 'with-rebar-release',
+        type: 'with-rebar-release',
         imgSrc:{
          small:'https://thumb.tildacdn.com/tild6431-6237-4434-a664-376162643435/-/cover/360x350/center/center/-/format/webp/s-vypuskom-armatury.jpg',
          large:'https://static.tildacdn.com/tild3531-6332-4831-b261-626230366338/s-vypuskom-armatury.jpg'
@@ -257,7 +257,7 @@ let state = {
         mountingDescription: ``
        },
        {id: 2,
-        executionType: 'with-tape-grillage',
+        type: 'with-tape-grillage',
         imgSrc:{
          small:'https://static.tildacdn.com/tild6133-3136-4935-a562-646134333166/s-lentochnym-rostver.jpg',
          large:'https://static.tildacdn.com/tild3466-3331-4730-a233-613330383661/s-lentochnym-rostver.jpg'
@@ -280,7 +280,7 @@ let state = {
       },
 
       {id: 3,
-        executionType: 'for-sloped-areas',
+        type: 'for-sloped-areas',
         imgSrc:{
          small:'https://thumb.tildacdn.com/tild3434-3538-4430-b731-326136343633/-/format/webp/s-uklonom.jpg',
          large:'https://static.tildacdn.com/tild6664-6436-4132-b165-366661333432/s-uklonom.jpg'
@@ -316,7 +316,7 @@ let state = {
         `,
       },
       {id: 4,
-        executionType: 'with-timber-strapping',
+        type: 'with-timber-strapping',
         imgSrc:{
          small:'https://thumb.tildacdn.com/tild3534-6333-4637-a434-383533636331/-/cover/360x350/center/center/-/format/webp/s-obvyazkoj-iz-brusa.jpg',
          large:'https://static.tildacdn.com/tild3563-3435-4333-b466-326163656566/s-obvyazkoj-iz-brusa.jpg'
@@ -342,7 +342,7 @@ let state = {
         mountingDescription: ``
       },
       {id: 5,
-        executionType: 'for-a-monolithic-slab',
+        type: 'for-a-monolithic-slab',
         imgSrc:{
          small:'https://thumb.tildacdn.com/tild3434-3538-4430-b731-326136343633/-/format/webp/s-uklonom.jpg',
          large:'https://static.tildacdn.com/tild6633-3631-4138-b031-383462323834/s-monolitnoj-plitoj.jpg'
@@ -364,7 +364,7 @@ let state = {
         В современном мире фундамент на ЖБ сваях с монолитной плитой является самым удачным вариантом на пучинистом грунте, что подтверждает высокая популярность его использования в северных районах страны.`
       },
       {id: 6,
-        executionType: 'with-channel-tie',
+        type: 'with-channel-tie',
         imgSrc:{
          small:'https://thumb.tildacdn.com/tild3636-3334-4237-b038-393864353131/-/cover/360x350/center/center/-/format/webp/s-obvyazkoj-shveller.jpg',
          large:'https://static.tildacdn.com/tild3633-3361-4630-a562-383363646262/s-obvyazkoj-shveller.jpg'
