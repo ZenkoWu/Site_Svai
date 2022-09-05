@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div>
       <footer>
-        <div className='container bgGrey colorGrey pb-5' >
+        <div className='w-100 bgGrey colorGrey py-4' >
           <div className='row py-5'>
             <div className='col ps-5'>
               <div className='col-5'>

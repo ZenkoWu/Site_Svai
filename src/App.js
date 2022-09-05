@@ -33,8 +33,8 @@ function App(props) {
           <Route path = 'contacts' element={<Contacts/>}/>
           <Route path = '*' element={<NotFoundedPage/>}/>
         </Routes>
-        <Footer/>
       </div>
+      <Footer/>
     </>
   );
 }
