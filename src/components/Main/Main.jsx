@@ -1,11 +1,28 @@
 import React from 'react'
 import img from '../../imges/2022-09-01_18-22-28 (1).png'
+import DescriptionCard from '../DescriptionСard/DescriptionСard'
 import Advantages from './Advantages'
 import FoundationPrice from './FoundationPrice'
 import FoundationsComparison from './FoundationsComparison'
 import GetCatalog from './GetCatalog'
 
 export default function Main() {
+
+  let descriptionCard = {
+    pPadding:'p-4',
+    titlePadding:'p-3',
+    lh:'lh-lg',
+    padding:'py-5',
+    description:`Забивные сваи – это изделие из железобетона в виде стержня с квадратным 
+    сечением 150х150, 200х200, 250х250 либо 300х300 мм. Для их производства используется бетон 
+    класса В 22,5 – В 25.
+    Для повышения износостойкости внутри сваи устанавливается стальная арматура с рифленым профилем 
+    класса “А” диаметром от 1 см. Острый конец конструкции упрощает вхождение в почву и 
+    закрепление в ней.`,
+    title:'Почему нужно выбрать Ж/Б сваи?',
+    src:'https://thumb.tildacdn.com/tild3538-3964-4531-b763-666237333662/-/resize/600x400/-/format/webp/svai.jpg'
+  }
+
   return (
     <div className=''>
       <div className=' mt-5 borderBlue' style={{ float: 'right', width: '75%', textAlign:'right', paddingLeft:'240px',}}>
@@ -39,22 +56,8 @@ export default function Main() {
         </div>
       </div>
       <img src={img} style={{ position: 'absolute'}}/>
-      <div className='row py-5' style={{clear:'both'}}>
-        <div className='col-6'>
-          <img 
-            className='w-100'
-            src='https://thumb.tildacdn.com/tild3538-3964-4531-b763-666237333662/-/resize/600x400/-/format/webp/svai.jpg'/>
-        </div>
-        {/* Почему нужно выбрать Ж/Б сваи? */}
-        <div className='col-6 text-center'>
-          <div className='h3 fw-bold p-3'>Почему нужно выбрать Ж/Б сваи?</div>
-          <div className='blueLine w-50'></div>
-          <p className='p-4 lh-lg'>
-            Забивные сваи – это изделие из железобетона в виде стержня с квадратным сечением 150х150, 200х200, 250х250 либо 300х300 мм. Для их производства используется бетон класса В 22,5 – В 25.
-           <br/> Для повышения износостойкости внутри сваи устанавливается стальная арматура с рифленым профилем класса “А” диаметром от 1 см. Острый конец конструкции упрощает вхождение в почву и закрепление в ней.
-          </p>
-        </div>
-      </div>
+      {/* Почему нужно выбрать Ж/Б сваи? */}
+      <DescriptionCard {...descriptionCard}/>
       <Advantages/>
       <FoundationsComparison/>
       <FoundationPrice/>

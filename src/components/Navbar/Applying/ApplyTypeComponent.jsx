@@ -6,6 +6,7 @@ import GetCatalog from '../../Main/GetCatalog';
 import Breadcrumbs from '../../Breadcrumbs/Breadcrumbs';
 import Advantages from '../../Main/Advantages';
 import FoundationTypes from './../../Main/FoundationTypes';
+import DescriptionCard from '../../DescriptionСard/DescriptionСard';
 
 export default function ApplyTypeComponent({applicationTypes}) {
 let [mountingMode, setOpenedMounting] = useState(false)
@@ -27,27 +28,24 @@ let params = useParams()
    if(!applyingType) {
     return <Navigate to ='/applying'/>
    }
+
+   let descriptionCard = {
+    button:'true',
+    linePadding:'p-3',
+      titlePadding: 'pt-4',
+      pPadding:'py-5',
+      description: applyingType.mainDescription,
+      title:`Ж/Б сваи для ${applyingType.point}`,
+      src:applyingType.imgSrc.large,
+   }
   return (
     <div>
       <Breadcrumbs
       currentPage={applyingType.title}
       prevPage=' Применение ЖБ свай в строительстве ' 
       to='/applying'/>
-      <div className='p-0'>
-        <div className='row'>
-            <div className='col-lg-6'>
-                <img src={applyingType.imgSrc.large} className='mw-100' />
-            </div>
-            <div className='col-lg-6 pt-5 text-center'>
-                <div className='h3 fw-bold text-center pt-4'>Ж/Б сваи для {applyingType.point}</div>
-                <div className='w-50 blueLine p-3'></div>
-                <div className='p-5'>{applyingType.mainDescription}</div>
-                <button className='borderBlue  w-50 p-2 text-white fw-bold bg-blue' 
-                  onClick={() => console.log('click')}>
-                  Заказать расчет
-                </button>
-            </div>
-           <ReadMore 
+      <DescriptionCard {...descriptionCard}/>
+        <ReadMore 
            mountingMode={mountingMode} 
            detailedMode={detailedMode} 
            changeMountingMode={changeMountingMode}
@@ -56,8 +54,6 @@ let params = useParams()
            description = {applyingType.mountingDescription}
            more = {applyingType.moreInfo}
            />
-        </div>
-    </div>
       <Advantages/>
       <FoundationsComparison/>
       <FoundationPrice/>

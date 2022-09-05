@@ -1,29 +1,31 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Breadcrumbs from '../../Breadcrumbs/Breadcrumbs';
+import DescriptionCard from '../../DescriptionСard/DescriptionСard';
 import FoundationPrice from '../../Main/FoundationPrice';
 import GetCatalog from '../../Main/GetCatalog';
 
 
 export default function Products() {
+
+  let descriptionCard = {
+    button: 'true',
+    pPadding:'p-3',
+    titlePadding: 'pb-2',
+    lh:'lh-md',
+    padding:'pb-5',
+    description:`Фундамент на забивных ж/б сваях — это железобетонная конструкция, 
+    служащая основанием для возведения здания. Необходимость в применении фундаментов на жб сваях 
+    возникает при проведении строительства на участках с проблемными грунтами, в условиях которых 
+    никакое другое основание не будет обладать требуемой несущей способностью и устойчивостью к 
+    эксплуатационным нагрузкам.`,
+    title:'Забивные железобетонные ЖБ сваи', 
+    src:'https://thumb.tildacdn.com/tild3538-3964-4531-b763-666237333662/-/resize/600x400/-/format/webp/svai.jpg'
+  }
   return (
     <div>
       <Breadcrumbs currentPage = 'Продукция'/>
-        <div className='row pb-5'>
-          <div className='col-6'>
-            <img 
-              className='w-100'
-              src='https://thumb.tildacdn.com/tild3538-3964-4531-b763-666237333662/-/resize/600x400/-/format/webp/svai.jpg'/>
-          </div>
-          <div className='col-6 text-center'>
-            <div className='h3 fw-bold p-3 pb-2'>Забивные железобетонные ЖБ сваи</div>
-            <div className='blueLine w-50'></div>
-            <p className='p-3 lh-md'>
-              Фундамент на забивных ж/б сваях — это железобетонная конструкция, служащая основанием для возведения здания. Необходимость в применении фундаментов на жб сваях возникает при проведении строительства на участках с проблемными грунтами, в условиях которых никакое другое основание не будет обладать требуемой несущей способностью и устойчивостью к эксплуатационным нагрузкам.
-            </p>
-            <button className='borderBlue w-50 p-2 text-white fw-bold bg-blue'>Заказать расчет</button>
-          </div>
-        </div>
+        <DescriptionCard {...descriptionCard}/>
         {/* <div>readmore</div> */}
         <div className='text-center'>
           <h2 className='fw-bold'>Сколько стоят ЖБ сваи?</h2>
