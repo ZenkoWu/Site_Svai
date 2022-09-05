@@ -11,6 +11,7 @@ import Contacts from './components/Navbar/Contacts';
 import ApplyTypeComponent from './components/Navbar/Applying/ApplyTypeComponent';
 import NotFoundedPage from './components/NotFoundedPage/NotFoundedPage';
 import Footer from './components/Footer/Footer';
+import ExecutionTypeComponent from './components/Navbar/ExecutionTypes/ExecutionTypeComponent';
 
 
 function App(props) {
@@ -22,7 +23,8 @@ function App(props) {
           <Route path = '/' element={<Main/>}/>
           <Route path = 'products' element={<Products/>}/>
           <Route path = 'executionTypes' element={<ExecutionTypes/>}>
-            <Route path='' element={<AllExecution/>}/>
+            <Route path='' element={<AllExecution executionTypes={props.state.executionTypes}/>}/>
+            <Route path=':executionType' element={<ExecutionTypeComponent executionTypes={props.state.executionTypes}/>}/>
           </Route>
           <Route path = 'applying' element={<Applying/>}>
             <Route path ='' element={<AllApplication applicationTypes = {props.state.applicationTypes}/>}/>
