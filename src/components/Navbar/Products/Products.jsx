@@ -4,6 +4,7 @@ import Breadcrumbs from '../../Breadcrumbs/Breadcrumbs';
 import DescriptionCard from '../../DescriptionСard/DescriptionСard';
 import FoundationPrice from '../../Main/FoundationPrice';
 import GetCatalog from '../../Main/GetCatalog';
+import ReadMore from '../../ReadMore/ReadMore';
 
 
 export default function Products() {
@@ -22,11 +23,16 @@ export default function Products() {
     title:'Забивные железобетонные ЖБ сваи', 
     src:'https://thumb.tildacdn.com/tild3538-3964-4531-b763-666237333662/-/resize/600x400/-/format/webp/svai.jpg'
   }
+  let more = `Фундаменты на забивных железобетонных сваях, среди всех видов оснований,
+   отличаются максимальной несущей способностью — они не имеют ограничений по массогабаритным 
+   характеристикам возводимых зданий, на таких фундаментах могут строиться даже тяжелые многоэтажные 
+   сооружения из кирпича с железобетонными перекрытиями. Фундаменты на забивных ж/б сваях показывают 
+   превосходные показатели надежности, долговечности и обладают отличной несущей способностью.`
   return (
     <div>
       <Breadcrumbs currentPage = 'Продукция'/>
         <DescriptionCard {...descriptionCard}/>
-        {/* <div>readmore</div> */}
+        <ReadMore more={more}/>
         <div className='text-center'>
           <h2 className='fw-bold'>Сколько стоят ЖБ сваи?</h2>
           <h5>Выберите интересующее вас сечение ЖБ сваи для открытия цены</h5>
