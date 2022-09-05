@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom';
-import FoundationPrice from '../../FoundationPrice';
-import FoundationsComparison from '../../FoundationsComparison';
-import GetCatalog from '../../GetCatalog';
+import FoundationPrice from '../../Main/FoundationPrice';
+import FoundationsComparison from '../../Main/FoundationsComparison';
+import GetCatalog from '../../Main/GetCatalog';
 import Breadcrumbs from '../../Breadcrumbs/Breadcrumbs';
-import Advantages from './../../Advantages';
-import FoundationTypes from './../../FoundationTypes';
+import Advantages from '../../Main/Advantages';
+import FoundationTypes from './../../Main/FoundationTypes';
 
 export default function ApplyTypeComponent({applicationTypes}) {
 let [mountingMode, setOpenedMounting] = useState(false)

@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Breadcrumbs from '../../Breadcrumbs/Breadcrumbs';
-import FoundationPrice from './../../FoundationPrice';
-import GetCatalog from './../../GetCatalog';
+import FoundationPrice from '../../Main/FoundationPrice';
+import GetCatalog from '../../Main/GetCatalog';
 
 
 export default function Products() {

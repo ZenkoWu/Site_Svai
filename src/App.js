@@ -5,13 +5,13 @@ import Products from './components/Navbar/Products/Products';
 import Main from './components/Main/Main';
 import ExecutionTypes, { AllExecution } from './components/Navbar/ExecutionTypes/ExecutionTypes';
 import Applying, { AllApplication } from './components/Navbar/Applying/Applying';
-import Objects from './components/Navbar/Objects';
-import Articles from './components/Navbar/Articles';
-import Contacts from './components/Navbar/Contacts';
 import ApplyTypeComponent from './components/Navbar/Applying/ApplyTypeComponent';
 import NotFoundedPage from './components/NotFoundedPage/NotFoundedPage';
 import Footer from './components/Footer/Footer';
 import ExecutionTypeComponent from './components/Navbar/ExecutionTypes/ExecutionTypeComponent';
+import Contacts from './components/Navbar/Contacts/Contacts';
+import Articles from './components/Navbar/Articles/Articles';
+import Objects from './components/Navbar/Objects/Objects';
 
 
 function App(props) {

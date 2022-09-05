@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom';
-import FoundationPrice from '../../FoundationPrice';
-import GetCatalog from '../../GetCatalog';
+import FoundationPrice from '../../Main/FoundationPrice';
+import GetCatalog from '../../Main/GetCatalog';
 import Breadcrumbs from '../../Breadcrumbs/Breadcrumbs';
 
 export default function Applying(props) {

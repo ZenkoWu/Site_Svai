@@ -1,10 +1,9 @@
 import React from 'react'
 import img from '../../imges/2022-09-01_18-22-28 (1).png'
-import Advantages from '../Advantages'
-import FoundationPrice from '../FoundationPrice'
-import FoundationsComparison from '../FoundationsComparison'
-import FoundationTypes from '../FoundationTypes'
-import GetCatalog from '../GetCatalog'
+import Advantages from './Advantages'
+import FoundationPrice from './FoundationPrice'
+import FoundationsComparison from './FoundationsComparison'
+import GetCatalog from './GetCatalog'
 
 export default function Main() {
   return (

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useParams, Navigate } from 'react-router-dom';
-import Advantages from './../../Advantages';
-import FoundationsComparison from './../../FoundationsComparison';
-import FoundationPrice from './../../FoundationPrice';
-import GetCatalog from './../../GetCatalog';
+import Advantages from '../../Main/Advantages';
+import FoundationsComparison from '../../Main/FoundationsComparison';
+import FoundationPrice from '../../Main/FoundationPrice';
+import GetCatalog from '../../Main/GetCatalog';
 import Breadcrumbs from './../../Breadcrumbs/Breadcrumbs';
 
 export default function ExecutionTypeComponent({executionTypes}) {

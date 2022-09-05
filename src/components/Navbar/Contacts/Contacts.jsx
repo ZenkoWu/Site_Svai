@@ -1,5 +1,5 @@
 import React from 'react'
-import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
+import Breadcrumbs from './../../Breadcrumbs/Breadcrumbs';
 
 export default function Contacts() {
   return (
