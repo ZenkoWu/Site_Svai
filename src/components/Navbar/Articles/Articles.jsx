@@ -1,11 +1,7 @@
-import React from 'react'
-import Breadcrumbs from './../../Breadcrumbs/Breadcrumbs';
+import { Outlet } from 'react-router-dom';
 
 export default function Articles() {
   return (
-    <div>
-      <Breadcrumbs currentPage = 'Статьи'/>
-      Articles
-    </div>
+    <Outlet/>
   )
 }

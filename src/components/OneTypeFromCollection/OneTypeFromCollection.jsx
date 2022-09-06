@@ -4,9 +4,10 @@ import FoundationsComparison from '../Main/FoundationsComparison';
 import GetCatalog from '../Main/GetCatalog';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import Advantages from '../Main/Advantages';
-import FoundationTypes from '../Main/FoundationTypes';
 import DescriptionCard from '../DescriptionСard/DescriptionСard';
 import ReadMore from '../ReadMore/ReadMore';
+import Carousel from './../Carousel/Carousel';
+import ArticleText from './../Navbar/Articles/ArticleText';
 
 export default function OneTypeFromCollection({collectionOfTypes, prevPage, to}) {
 
@@ -20,30 +21,33 @@ let params = useParams()
    }
 
    let descriptionCard = {
-    button:'true',
+    imgTopP: oneType.point ? null : 'pt-5' ,
+    button: oneType.point ? true : false,
     linePadding:'p-3',
-      titlePadding: 'pt-4',
       pPadding:'py-5',
       description: oneType.mainDescription,
-      title:`Ж/Б сваи для ${oneType.point}`,
+      title:`${oneType.point ? oneType.point : oneType.title}`,
       src:oneType.imgSrc.large,
    }
   return (
     <div>
       <Breadcrumbs
-      currentPage={oneType.title}
+        currentPage={oneType.title}
         prevPage={prevPage} 
         to={to}/>
       <DescriptionCard {...descriptionCard}/>
+      { oneType.more ?
         <ReadMore
-          point ={`Монтаж ЖБ свай для ${oneType.point}`}
+          point ={`Монтаж ${oneType.point}`}
           description = {oneType.mountingDescription}
           more = {oneType.moreInfo}
         />
+        : oneType.text ? <ArticleText text= {oneType.text}/> 
+        : null
+      }
       <Advantages/>
       <FoundationsComparison/>
       <FoundationPrice/>
-      <FoundationTypes/>
       <GetCatalog/>
     </div>
   )

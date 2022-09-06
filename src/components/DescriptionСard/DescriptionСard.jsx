@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function DescriptionCard(props) {
 
-let {src, title, description, padding, titlePadding, lh, pPadding, linePadding, button} = {...props}
+let {src, title, description, padding, titlePadding, lh, pPadding, linePadding, button, imgTopP} = {...props}
 
   return (
     <div className={`row pb-5 clear ${padding}`}>
       <div className='col-6'>
         <img 
-          className='w-100'
+          className={`w-100 ${imgTopP}`}
           src={src}/>
       </div>
       <div className='col-6 pt-5 text-center'>

@@ -12,6 +12,7 @@ import Articles from './components/Navbar/Articles/Articles';
 import Objects from './components/Navbar/Objects/Objects';
 import TypesCollection  from './components/TypesCollection/TypesCollection';
 import OneTypeFromCollection from './components/OneTypeFromCollection/OneTypeFromCollection';
+import AllArticles from './components/Navbar/Articles/AllArticles';
 
 
 function App(props) {
@@ -42,7 +43,12 @@ function App(props) {
             />
           </Route>
           <Route path = 'objects' element={<Objects/>}/>
-          <Route path = 'articles' element={<Articles/>}/>
+          <Route path = 'articles' element={<Articles />}>
+            <Route path = '' element={<AllArticles articles ={props.state.articles}/>}/>
+            <Route path =':type' element={<OneTypeFromCollection prevPage='Статьи'
+            collectionOfTypes ={props.state.articles}
+            to='/articles'/>}/>
+          </Route>
           <Route path = 'contacts' element={<Contacts/>}/>
           <Route path = '*' element={<NotFoundedPage/>}/>
         </Routes>
