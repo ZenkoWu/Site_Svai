@@ -1,11 +1,7 @@
-import React from 'react'
-import Breadcrumbs from './../../Breadcrumbs/Breadcrumbs';
+import { Outlet } from 'react-router-dom';
 
 export default function Objects() {
   return (
-    <div>
-      <Breadcrumbs currentPage = 'Объекты'/>
-      Objects
-    </div>
+    <Outlet/>
   )
 }

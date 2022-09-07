@@ -512,6 +512,49 @@ let state = {
        Не подвергаются коррозии, подходят для строительства даже на влажном и кислом грунте
        Длительный срок службы. Сваи могут простоять более 100 лет`
       },
+    ],
+
+    objects: [
+      {id:'1',
+      type:'pile-field-with-anchor-plates-for', 
+      imgSrc:{
+       small:'https://thumb.tildacdn.com/tild6462-6164-4262-a664-343931323032/-/cover/260x195/center/center/-/format/webp/4_2.jpg',
+       imgCollection: ['https://static.tildacdn.com/tild6462-6164-4262-a664-343931323032/4_2.jpg',
+        'https://static.tildacdn.com/tild3438-3437-4632-a264-343163646538/4_3.jpg',
+        'https://static.tildacdn.com/tild6133-3230-4337-b933-363237326436/4_1.jpg']
+      },
+       title: 'Свайное поле с анкерными пластинами для дома в д. Сорочкино',
+       postDate: '16.03.2021',  
+      },
+      {id:'2',
+      type:'pile-field-for-a-small-house', 
+      imgSrc:{
+       small:'https://thumb.tildacdn.com/tild3766-6239-4130-b735-366638333435/-/cover/260x195/center/center/-/format/webp/8_1.jpg',
+       imgCollection: ['https://static.tildacdn.com/tild3766-6239-4130-b735-366638333435/8_1.jpg',
+        'https://static.tildacdn.com/tild3761-6566-4664-a536-326333313661/8_2.jpg',]
+      },
+       title: 'Свайное поле для небольшого дома в с. Ушаки',
+       postDate: '06.01.2021',  
+      },
+      {id:'3',
+      type:'foundation-on-reinforced-concrete-piles-for-frame', 
+      imgSrc:{
+       small:'https://thumb.tildacdn.com/tild6635-3838-4262-b735-656333346462/-/cover/260x195/center/center/-/format/webp/6_1.jpg',
+       imgCollection: ['https://static.tildacdn.com/tild6635-3838-4262-b735-656333346462/6_1.jpg',]
+      },
+       title: 'Фундамент на ЖБ сваях для каркасного дома с анкерами в ПГТ. Красный бор',
+       postDate: '28.12.2020',  
+      },
+      {id:'4',
+      type:'winter-installation-of-a-pile-field-for-a-car-service', 
+      imgSrc:{
+       small:'https://thumb.tildacdn.com/tild3438-3461-4366-a637-396137333335/-/cover/260x195/center/center/-/format/webp/7_1.jpg',
+       imgCollection: ['https://static.tildacdn.com/tild3438-3461-4366-a637-396137333335/7_1.jpg',
+        'https://static.tildacdn.com/tild3335-3931-4131-b063-373561353863/7_2.jpg',]
+      },
+       title: 'Зимний монтаж свайного поля для автосервиса в г. Санкт-Петербурге',
+       postDate: '17.12.2020',  
+      },
     ]
 }
 
