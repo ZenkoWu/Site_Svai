@@ -49,7 +49,7 @@ function App(props) {
             currentPage = 'Объекты'
             title = 'Наши выполненные объекты'
             artOrObj={props.state.objects}/>}/>
-            <Route path = ':type' element={<OneObject/>}/>
+            <Route path = ':type' element={<OneObject objects={props.state.objects}/>}/>
           </Route>
           <Route path = 'articles' element={<Articles/>}>
             <Route path = '' element={<ArtOrObjCatalog 
