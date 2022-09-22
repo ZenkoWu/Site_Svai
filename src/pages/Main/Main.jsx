@@ -1,12 +1,15 @@
 import React from 'react'
-import img from '../../imges/2022-09-01_18-22-28 (1).png'
-import DescriptionCard from '../DescriptionСard/DescriptionСard'
-import Advantages from './Advantages'
-import FoundationPrice from './FoundationPrice'
-import FoundationsComparison from './FoundationsComparison'
-import GetCatalog from './GetCatalog'
+import img from '../../images/2022-09-01_18-22-28 (1).png'
+import DescriptionCard from '../../components/DescriptionCard/DescriptionCard'
+import Advantages from '../../components/Advantages/Advantages'
+import FoundationPrice from '../../components/FoundationPrice'
+import FoundationsComparison from '../../components/FoundationsComparison/FoundationsComparison'
+import GetCatalog from '../../components/GetCatalog/GetCatalog'
+import Carousel from '../../components/Carousel/Carousel';
+import { NavLink } from 'react-router-dom';
+import Tiles from '../../components/Tiles/Tiles';
 
-export default function Main() {
+export default function Main(props) {
 
   let descriptionCard = {
     pPadding:'p-4',
@@ -50,7 +53,7 @@ export default function Main() {
             style={{maxHeight:'75px'}}
             className='px-4'/>
           <div className='text-center '>
-            <button className=' col-8 bg-blue text-white fw-bold text-center fs-5' 
+            <button className='col-8 bg-blue text-white fw-bold text-center fs-5' 
               style={{border:'none', height:'50px'}}>Рассчитать</button>
           </div>
         </div>
@@ -61,8 +64,23 @@ export default function Main() {
       <Advantages/>
       <FoundationsComparison/>
       <FoundationPrice/>
-      {/* <FoundationTypes/> */}
+      <Carousel 
+        carouselItems={props.executionTypes} 
+        to = '/executionTypes/'
+        title ='Виды фундаментов на Ж/Б сваях'
+      /> 
       <GetCatalog/>
+      <Carousel 
+        carouselItems={props.applicationTypes} 
+        to = '/applying/'
+        title ='Применение Ж/Б свай в строительстве'
+      /> 
+        <Tiles tileElements={props.tileElements} to='/objects/' title='Наши выполненные объекты'/>
+        <div className='p-5 text-center'>
+          <NavLink to='/objects'> 
+            <button className='borderBlue p-3 px-5 text-white fw-bold bg-blue'>Все объекты</button>
+          </NavLink>
+        </div> 
     </div>
   )
 }

@@ -1,8 +1,7 @@
 import React from 'react'
-import GetCatalog from '../../Main/GetCatalog';
-import AllArticles from '../Articles/AllArticles';
-import Breadcrumbs from './../../Breadcrumbs/Breadcrumbs';
-import { Navigate } from 'react-router-dom';
+import GetCatalog from '../../components/GetCatalog/GetCatalog';
+import Breadcrumbs from './../../components/Breadcrumbs/Breadcrumbs';
+import Tiles from '../../components/Tiles/Tiles';
 
 export default function Contacts({articles}) {
   return (
@@ -17,8 +16,7 @@ export default function Contacts({articles}) {
           <h6 className='py-3'>Санкт-Петербург, Южное шоссе, дом 37, корпус 4</h6>
         </div>
        </div>
-       <h2 className='text-center fw-bold'>Наши выполненные объекты</h2>
-       {/* <AllArticles articles={articles}/> */}
+       <Tiles tileElements={articles} to = '/articles/' title='Наши выполненные объекты'/>
        <GetCatalog/>
     </div>
   )

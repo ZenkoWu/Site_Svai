@@ -1,9 +1,7 @@
 import React from 'react'
 
 export default function DescriptionCard(props) {
-
 let {src, title, description, padding, titlePadding, lh, pPadding, linePadding, button, imgTopP} = {...props}
-
   return (
     <div className={`row pb-5 clear ${padding}`}>
       <div className='col-6'>
@@ -24,3 +22,6 @@ let {src, title, description, padding, titlePadding, lh, pPadding, linePadding, 
     </div>
   )
 }
+// Карточка - блок с картинкой и текстом-описанием рядом, кнопка является опциональной и
+//  указывается в передаваемом объекте; в объекте также указываются определенные стили в зависимости 
+// от места использования карточки

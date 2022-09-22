@@ -1,13 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Breadcrumbs from '../../Breadcrumbs/Breadcrumbs';
-import DescriptionCard from '../../DescriptionСard/DescriptionСard';
-import FoundationPrice from '../../Main/FoundationPrice';
-import GetCatalog from '../../Main/GetCatalog';
-import ReadMore from '../../ReadMore/ReadMore';
+import Breadcrumbs from './../../components/Breadcrumbs/Breadcrumbs';
+import DescriptionCard from '../../components/DescriptionCard/DescriptionCard';
+import ReadMore from './../../components/ReadMore/ReadMore';
+import FoundationPrice from './../../components/FoundationPrice';
+import GetCatalog from '../../components/GetCatalog/GetCatalog';
+import Tiles from '../../components/Tiles/Tiles';
 
 
-export default function Products() {
+export default function Products(props) {
 
   let descriptionCard = {
     button: 'true',
@@ -71,7 +72,19 @@ export default function Products() {
           </div>
         </div>
         <FoundationPrice/>
+          <Tiles tileElements ={props.articles} to='/articles/' title='Полезные статьи о Ж/Б сваях'/>
+          <div className='p-5 text-center'>
+          <NavLink to='/articles'> 
+            <button className='borderBlue p-3 px-5 text-white fw-bold bg-blue'>Все статьи</button>
+          </NavLink>
+          </div>
         <GetCatalog/>
+        <Tiles tileElements={props.objects} to='/objects/' title='Наши выполненные объекты'/>
+        <div className='p-5 text-center'>
+          <NavLink to='/objects'> 
+            <button className='borderBlue p-3 px-5 text-white fw-bold bg-blue'>Все объекты</button>
+          </NavLink>
+        </div>
     </div>
   )
 }

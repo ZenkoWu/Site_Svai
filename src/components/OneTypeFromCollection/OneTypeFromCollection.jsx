@@ -1,13 +1,13 @@
 import { Navigate, useParams } from 'react-router-dom';
-import FoundationPrice from '../Main/FoundationPrice';
-import FoundationsComparison from '../Main/FoundationsComparison';
-import GetCatalog from '../Main/GetCatalog';
+import FoundationPrice from '../FoundationPrice';
+import FoundationsComparison from '../FoundationsComparison/FoundationsComparison';
+import GetCatalog from '../GetCatalog/GetCatalog';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
-import Advantages from '../Main/Advantages';
-import DescriptionCard from '../DescriptionСard/DescriptionСard';
+import Advantages from '../Advantages/Advantages';
+import DescriptionCard from '../DescriptionCard/DescriptionCard';
 import ReadMore from '../ReadMore/ReadMore';
 import Carousel from './../Carousel/Carousel';
-import ArticleText from './../Navbar/Articles/ArticleText';
+import ArticleText from '../../pages/Articles/ArticleText';
 
 export default function OneTypeFromCollection({collectionOfTypes, prevPage, to}) {
 
@@ -17,7 +17,7 @@ let params = useParams()
     (elem.type === params.type ? elem : total), null) 
 
    if(!oneType) {
-    return <Navigate to ={to}/>
+    return <Navigate to={to}/>
    }
 
    let descriptionCard = {
@@ -34,7 +34,8 @@ let params = useParams()
       <Breadcrumbs
         currentPage={oneType.title}
         prevPage={prevPage} 
-        to={to}/>
+        to={to}
+      />
       <DescriptionCard {...descriptionCard}/>
       { oneType.more ?
         <ReadMore
@@ -42,12 +43,17 @@ let params = useParams()
           description = {oneType.mountingDescription}
           more = {oneType.moreInfo}
         />
-        : oneType.text ? <ArticleText text= {oneType.text}/> 
+        : oneType.text ? <ArticleText text = {oneType.text}/> 
         : null
       }
       <Advantages/>
       <FoundationsComparison/>
       <FoundationPrice/>
+      <Carousel 
+        carouselItems={collectionOfTypes}
+        to = '/executionTypes/'
+        title = 'Виды фундаментов на Ж/Б сваях'
+      />
       <GetCatalog/>
     </div>
   )
