@@ -3,6 +3,7 @@ import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import FoundationPrice from '../FoundationPrice';
 import GetCatalog from '../GetCatalog/GetCatalog';
 import Tiles from '../Tiles/Tiles';
+import ShowAllButton from './../ShowAllButton/ShowAllButton';
 
 
 export default function TypesCollection({types, title, articles, objects}) {
@@ -27,18 +28,10 @@ export default function TypesCollection({types, title, articles, objects}) {
       </div>
       <FoundationPrice/>
       <Tiles tileElements ={articles} to='/articles/' title='Полезные статьи о Ж/Б сваях'/>
-      <div className='p-5 text-center'>
-        <NavLink to='/articles'> 
-          <button className='borderBlue p-3 px-5 text-white fw-bold bg-blue'>Все статьи</button>
-        </NavLink>
-      </div>
+      <ShowAllButton to='/articles' all='статьи'/>
       <GetCatalog/>
       <Tiles tileElements={objects} to='/objects/' title='Наши выполненные объекты'/>
-      <div className='p-5 text-center'>
-        <NavLink to='/objects'> 
-          <button className='borderBlue p-3 px-5 text-white fw-bold bg-blue'>Все объекты</button>
-        </NavLink>
-      </div>
+      <ShowAllButton to='/objects' all='объекты'/>
     </div>
   )
 }

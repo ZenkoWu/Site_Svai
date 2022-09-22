@@ -6,6 +6,7 @@ import ReadMore from './../../components/ReadMore/ReadMore';
 import FoundationPrice from './../../components/FoundationPrice';
 import GetCatalog from '../../components/GetCatalog/GetCatalog';
 import Tiles from '../../components/Tiles/Tiles';
+import ShowAllButton from './../../components/ShowAllButton/ShowAllButton';
 
 
 export default function Products(props) {
@@ -73,18 +74,10 @@ export default function Products(props) {
         </div>
         <FoundationPrice/>
           <Tiles tileElements ={props.articles} to='/articles/' title='Полезные статьи о Ж/Б сваях'/>
-          <div className='p-5 text-center'>
-          <NavLink to='/articles'> 
-            <button className='borderBlue p-3 px-5 text-white fw-bold bg-blue'>Все статьи</button>
-          </NavLink>
-          </div>
+          <ShowAllButton to='/articles' all='статьи'/>
         <GetCatalog/>
         <Tiles tileElements={props.objects} to='/objects/' title='Наши выполненные объекты'/>
-        <div className='p-5 text-center'>
-          <NavLink to='/objects'> 
-            <button className='borderBlue p-3 px-5 text-white fw-bold bg-blue'>Все объекты</button>
-          </NavLink>
-        </div>
+        <ShowAllButton to='/objects' all='объекты'/>
     </div>
   )
 }

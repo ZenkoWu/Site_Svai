@@ -8,6 +8,7 @@ import GetCatalog from '../../components/GetCatalog/GetCatalog'
 import Carousel from '../../components/Carousel/Carousel';
 import { NavLink } from 'react-router-dom';
 import Tiles from '../../components/Tiles/Tiles';
+import ShowAllButton from './../../components/ShowAllButton/ShowAllButton';
 
 export default function Main(props) {
 
@@ -75,12 +76,8 @@ export default function Main(props) {
         to = '/applying/'
         title ='Применение Ж/Б свай в строительстве'
       /> 
-        <Tiles tileElements={props.tileElements} to='/objects/' title='Наши выполненные объекты'/>
-        <div className='p-5 text-center'>
-          <NavLink to='/objects'> 
-            <button className='borderBlue p-3 px-5 text-white fw-bold bg-blue'>Все объекты</button>
-          </NavLink>
-        </div> 
+      <Tiles tileElements={props.tileElements} to='/objects/' title='Наши выполненные объекты'/>
+      <ShowAllButton to='/objects' all='объекты'/>
     </div>
   )
 }
