@@ -17,10 +17,7 @@ export default function Footer() {
                 </a>
               </div>
               <div style={{fontSize:'12px'}}>
-                <div>ООО ГК «Буровые технологии»</div>
-                <div>ОГРН: 1167847080565</div>
-                <div>ИНН: 7816318009</div>
-                <div>© Все права защищены, копирование без разрешения владельца запрещено</div>
+                ххххххххх
               </div>
             </div>
             <div className='col pt-1'>
