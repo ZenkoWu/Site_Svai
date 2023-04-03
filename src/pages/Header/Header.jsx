@@ -36,7 +36,7 @@ export default function Header() {
                       <i class="fa-solid fa-location-dot fa-2x colorBlue"></i>
                     </div>
                     <div class="col-sm px-3 lh-sm">
-                      г. Санкт-Петербург, Южное шоссе, дом 37, корпус 4
+                      г. Санкт-Петербург, Южное шоссе, дом Х, корпус У
                     </div>
                     </div>
                   <div className='row'>
@@ -44,7 +44,7 @@ export default function Header() {
                       <i class="fa-solid fa-envelope fa-2x colorBlue"></i>
                     </div>
                     <div class="col-sm px-3 fs-5">
-                      info@svayagrup.ru
+                      test@mail.ru
                     </div>
                   </div>
               </div>
@@ -73,7 +73,7 @@ export default function Header() {
               <a href='/'> <i class="fa-solid fa-phone fs-4 colorBlue" ></i></a>
             </div>
             <div class="col-lg-7 fw-bold p-0">
-                <span style={{fontSize:'24px'}}>8 (812) 500-05-54</span>
+                <span style={{fontSize:'24px'}}>8 (812) ххх-хх-хх</span>
             </div>
           </div>
           <div className='row pt-3 d-flex justify-content-end'>
